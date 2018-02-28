@@ -1,6 +1,34 @@
 
 # coding: utf-8
 
+# In[55]:
+
+
+name="Person"
+gender = "f"
+height_m = 1.65
+weight_kg = 55
+
+if(gender == "f"):
+    his_or_her = "her"
+elif(gender == "m"):
+    his_or_her = "his"
+else:
+    his_or_her = name + "'s"
+        
+bmi= weight_kg/ (height_m ** 2)
+print (bmi)
+if bmi < 18:
+    print (name + " is underweight. " + name +  "is suggested to increase" + his_or_her + " calorie intake & to get plenty of exercise.")
+else:
+    if 18< bmi <25:
+        print (name + " is normal weight. It is suggested that " + name + "  keep " + his_or_her + "calorie intake the same & maintain activity levels")
+    if 25< bmi <30:
+        print (name + " is overweight. It is suggested that " + name + " reviewed " + his_or_her + " calorie intake & activity levels")
+    if bmi >30: 
+        print (name + " is obese. It is suggested that " + name + " went to see a GP because there may be at risk of type 2 diabetes & heart disease.")
+
+
 # In[4]:
 
 
@@ -53,32 +81,4 @@ else:
     else :
         print("g is greater than h")
     
-
-
-# In[55]:
-
-
-name="Ellie"
-gender = "f"
-height_m = 1.40
-weight_kg = 50
-
-if(gender == "f"):
-    his_or_her = "her"
-elif(gender == "m"):
-    his_or_her = "his"
-else:
-    his_or_her = name + "'s"
-        
-bmi= weight_kg/ (height_m ** 2)
-print (bmi)
-if bmi < 18:
-    print (name + " is underweight. " + name +  "is suggested to increase" + his_or_her + " calorie intake & to get plenty of exercise.")
-else:
-    if 18< bmi <25:
-        print (name + " is normal weight. It is suggested that " + name + "  keep " + his_or_her + "calorie intake the same & maintain activity levels")
-    if 25< bmi <30:
-        print (name + " is overweight. It is suggested that " + name + " reviewed " + his_or_her + " calorie intake & activity levels")
-    if bmi >30: 
-        print (name + " is obese. It is suggested that " + name + " went to see a GP because there may be at risk of type 2 diabetes & heart disease.")
 
